@@ -420,7 +420,6 @@ img {
 
 .our-command__list {
   margin-bottom: -30px;
-  list-style: none;
 }
 
 .our-command__item {
@@ -457,7 +456,7 @@ img {
 .our-command-social-list {
   display: flex;
   justify-content: center;
-  margin-left: -10px;
+  margin: 16px 122px 0 122px;
 }
 
 .socials__item {

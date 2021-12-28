@@ -64,7 +64,8 @@
 
 .our-command-social-list {
   @include flex(flex, center, null);
-  margin-left: -10px;
+  // margin-left: -10px;
+  margin: 16px 122px 0 122px;
 }
 
 .socials__item {
