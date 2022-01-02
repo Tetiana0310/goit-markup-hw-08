@@ -366,6 +366,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
+
 .about-us__list {
   display: flex;
   margin-right: -30px;
@@ -637,15 +643,40 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
   text-align: center;
+  background-color: var(--dark-background-color);
 }
 
-.footer {
-  background-color: var(--dark-background-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 0;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 .footer-logo {
@@ -697,8 +728,32 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
+  }
+}
+
 .footer-join {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-join {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-right: auto;
+  }
 }
 
 .footer-join__title {
@@ -759,8 +814,30 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
 .footer-subscribe {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
 }
 
 .footer-form__input {
