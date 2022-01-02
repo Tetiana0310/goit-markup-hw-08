@@ -1,10 +1,13 @@
 .footer-wrap {
-  @include flex(flex, null, baseline);
+  //
+  margin: 0 auto;
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer {
@@ -54,11 +57,13 @@
 
 .footer-contacts {
   display: block;
-  margin-right: 70px;
+  // margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .footer-join {
-  margin-right: auto;
+  // margin-right: auto;
+  margin: 0 auto;
 }
 .footer-join__title {
   font-weight: 700;
@@ -69,10 +74,11 @@
   color: var(--second-text-color);
   font-style: normal;
   margin-bottom: 20px;
-  display: flex;
+  // display: flex;
 }
 .footer-social {
   @include flex(flex, center, flex-start);
+  margin-bottom: 60px;
 }
 .footer-social__item {
   width: 44px;
@@ -110,12 +116,12 @@
   color: var(--second-text-color);
   font-style: normal;
   margin-bottom: 20px;
-  display: flex;
+  // display: flex;
 }
 .footer-subscribe {
-  @include flex(flex, null, baseline);
-  flex-direction: column;
-  margin-left: auto;
+  // @include flex(flex, null, baseline);
+  // flex-direction: column;
+  margin: 0 auto;
 }
 .footer-form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -125,6 +131,7 @@
   height: 50px;
   padding: 15px 16px;
   color: var(--second-text-color);
+  margin-bottom: 20px;
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
