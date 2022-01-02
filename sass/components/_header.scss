@@ -8,11 +8,17 @@
 
 .header-list {
   @include flex(flex, null, baseline);
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header-contacts {
   @include flex(flex, null, center);
   margin-left: auto;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header-contacts__mail {
@@ -109,4 +115,9 @@
   &:hover {
     color: var(--accent-color);
   }
+}
+.open-menu-btn {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
 }
