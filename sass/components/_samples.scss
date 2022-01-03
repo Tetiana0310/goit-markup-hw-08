@@ -4,12 +4,25 @@
 }
 
 .samples-list {
-  @include flex(flex, center, null);
-  margin-bottom: 50px;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -8px;
+  margin-bottom: -15px;
+
+  @media screen and (min-width: 1200px) {
+    @include flex(flex, center, null);
+    margin-bottom: 50px;
+  }
 }
 
 .samples-list__item {
+  display: inline-flex;
   margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
 }
 
 .samples-list__btn {

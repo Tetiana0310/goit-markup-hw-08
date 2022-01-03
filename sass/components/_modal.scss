@@ -12,8 +12,11 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
   background-color: var(--second-text-color);
   border-radius: 4px;
   position: absolute;
@@ -153,8 +156,8 @@
 .modal-check__text {
   width: 100%;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.46;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--main-text-color);
   letter-spacing: 0.03em;
   @include flex(flex, center, baseline);
@@ -165,7 +168,12 @@
     border: 2px solid #000000;
     margin-right: 5px;
     border-radius: 2px;
+    letter-spacing: 0.03em;
     @include flex(flex, center, center);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.46;
   }
 }
 
