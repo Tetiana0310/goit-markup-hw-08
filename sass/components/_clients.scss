@@ -20,6 +20,9 @@
   // letter-spacing: 0.03em;
   // display: block;
   // margin-bottom:50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .clients-list {

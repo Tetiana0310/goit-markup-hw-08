@@ -15,7 +15,8 @@
 
 .footer__tablet {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    @include flex(flex, center, space-between);
+    @include flex(flex, center, baseline);
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     @include flex(flex, center, baseline);
@@ -71,22 +72,29 @@
 
 .footer-contacts {
   display: block;
-  margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 50%;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
-}
 
-.footer-join {
-  margin: 0 auto;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
   }
   @media screen and (min-width: 1200px) {
     margin-right: auto;
+  }
+}
+
+.footer-join {
+  // margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: 70px;
   }
 }
 .footer-join__title {
@@ -102,7 +110,7 @@
 }
 .footer-social {
   @include flex(flex, center, flex-start);
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 .footer-social__item {
   width: 44px;
@@ -140,6 +148,8 @@
   color: var(--second-text-color);
   font-style: normal;
   margin-bottom: 20px;
+  text-transform: uppercase;
+
   // display: flex;
 }
 .footer-form {
@@ -153,7 +163,7 @@
   }
 }
 .footer-subscribe {
-  margin: 0 auto;
+  // margin: 0 auto;
   @media screen and (min-width: 1200px) {
     @include flex(flex, null, baseline);
     flex-direction: column;
@@ -163,7 +173,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   color: var(--second-text-color);
@@ -174,6 +184,12 @@
     line-height: 1.25;
     font-weight: 400;
     letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -191,9 +207,14 @@
   background-color: var(--accent-color);
   width: 200px;
   height: 50px;
+  display: flex;
   margin-left: 12px;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
 }
 
 .footer-form__icon {

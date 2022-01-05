@@ -28,10 +28,16 @@
     margin-left: auto;
     flex-direction: row;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .header-contacts__mail {
   @include flex(flex, null, center);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .header-contacts__icon {
@@ -124,18 +130,15 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  // padding: 32px 0;
   @include flex(flex, null, center);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     color: var(--accent-color);
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
   }
   @media screen and (min-width: 1200px) {
     @include flex(flex, null, center);
+    padding: 32px 0;
   }
 }
 
@@ -178,23 +181,20 @@
   top: 0;
   left: 0;
   z-index: 5;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 40px;
+  transition: opacity 350ms, visibility 350ms;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
   }
-}
-@media screen and (min-width: 768px) {
-  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-// .mob-menu__list {
-//   margin-bottom: 302px;
-// }
 .mob-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -206,7 +206,16 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
+.mob-contacts__list {
+  margin-bottom: 64px;
+}
+
 .mob-contacts__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -219,6 +228,11 @@
   font-size: 34px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+  }
 }
 
 .mob-contacts__mail {
@@ -227,19 +241,24 @@
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-menu-current__link {
   color: var(--accent-color);
 }
 .mob-socials {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .mob-socials__item {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
   margin-right: 10px;
-  padding-right: 10px;
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
@@ -250,6 +269,12 @@
   font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  padding-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+  }
 }
 // .mob-menu__bottom {
 //   margin-top: auto;
